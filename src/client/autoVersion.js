@@ -18,8 +18,8 @@ module.exports = function (client, options) {
 
     // Pass server-reported version to protocol handler
     // The version string is interpreted by https://github.com/PrismarineJS/node-minecraft-data
-    const brandedMinecraftVersion = 1.15 // 1.8.9, 1.7.10
-    const protocolVersion = 573//    47,      5
+    const brandedMinecraftVersion = 1.15.1 // 1.8.9, 1.7.10
+    const protocolVersion = 575//    47,      5
     const versions = [brandedMinecraftVersion]
       .concat(brandedMinecraftVersion.match(/((\d+\.)+\d+)/g) || [])
       .map(function (version) {
