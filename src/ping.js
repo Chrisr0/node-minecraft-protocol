@@ -38,7 +38,7 @@ function ping (options, cb) {
   // TODO: refactor with src/client/setProtocol.js
   client.on('connect', function () {
     client.write('set_protocol', {
-      protocolVersion: options.protocolVersion,
+      protocolVersion: 701,
       serverHost: options.host,
       serverPort: options.port,
       nextState: 1
