@@ -23,7 +23,7 @@ function createClient (options) {
 
   // TODO: avoid setting default version if autoVersion is enabled
   const optVersion = options.version || require('./version').defaultVersion
-  const mcData = require('minecraft-data')(optVersion)
+  const mcData = require('minecraft-data')("1.14.4")
   if (!mcData) throw new Error(`unsupported protocol version: ${optVersion}`)
   const version = mcData.version
   options.majorVersion = version.majorVersion
