@@ -17,7 +17,7 @@ module.exports = function (client, options) {
       if (client.tagHost) taggedHost += client.tagHost
 
       client.write('set_protocol', {
-        protocolVersion: options.protocolVersion,
+        protocolVersion: 701,
         serverHost: taggedHost,
         serverPort: options.port,
         nextState: 2
